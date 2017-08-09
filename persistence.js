@@ -12,8 +12,8 @@
             time: 'appData_expTimestamp'
         };
 
-        var expirationDays = 1;//1000 milliseconds * 60 seconds * 60 minutes * 24 hrs * 14 days.
-        var expirationMillis = 1000 * 60 * 60 * 24 * expirationDays;
+        var expirationDays = 1;//data expires after 1 day by default
+        var expirationMillis = 1000 * 60 * 60 * 24 * expirationDays;//1000 milliseconds * 60 seconds * 60 minutes * 24 hrs.
         var tStamp = localStorage.getItem(lsKeys.time);
 
         //check for expiration
