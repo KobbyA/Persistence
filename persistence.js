@@ -56,7 +56,7 @@
             },
 
             clearPersistenceStates: function () {
-                this.persistenceState = {};
+                this.persistenceState = persist({});
             },
 
             getPersistenceState: function (state) {
@@ -76,6 +76,14 @@
 
             setExpirationDays: function(days){
                 expirationDays = days;
+            },
+
+            setAppDataKey: function(keyName){
+                lsKeys.appData = keyName;
+            },
+
+            getAppDataKey: function(){
+                return lsKeys.appData;
             }
         }
 
