@@ -12,7 +12,7 @@
             time: 'appData_expTimestamp'
         };
 
-        var expirationDays = 1;//1000 milliseconds * 60 seconds * 60 minutes * 24 hrs * 14 days. AKA 2 weeks
+        var expirationDays = 1;//1000 milliseconds * 60 seconds * 60 minutes * 24 hrs * 14 days.
         var expirationMillis = 1000 * 60 * 60 * 24 * expirationDays;
         var tStamp = localStorage.getItem(lsKeys.time);
 
