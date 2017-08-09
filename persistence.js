@@ -8,8 +8,8 @@
 (function (win) {
     win.Persistence = function () {
         var lsKeys = {
-            appData: "abbay",
-            time: 'expTimestamp'
+            appData: "appData",
+            time: 'appData_expTimestamp'
         };
 
         var expirationDays = 1;//1000 milliseconds * 60 seconds * 60 minutes * 24 hrs * 14 days. AKA 2 weeks
@@ -80,6 +80,7 @@
 
             setAppDataKey: function(keyName){
                 lsKeys.appData = keyName;
+                lsKeys.time = keyName + '_expTimestamp';
             },
 
             getAppDataKey: function(){
